@@ -1,31 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ec.edu.espe.birthregistry.model;
 
 /**
  *
  * @author DTj
  */
-public class Create {
+public class RegistryBaby {
    private String name;
    private String lastnameoffahter;
    private String lastnameofmother;
-   private String date;
-   private String month;
-   private String year;
-   private String weight;
+   private int date;
+   private int month;
+   private int year;
 
-    public Create(String name, String lastnameoffahter, String lastnameofmother, String date, String month, String year, String weight) {
+    public RegistryBaby(String name, String lastnameoffahter, String lastnameofmother, int date, int month, int year) {
         this.name = name;
         this.lastnameoffahter = lastnameoffahter;
         this.lastnameofmother = lastnameofmother;
         this.date = date;
         this.month = month;
         this.year = year;
-        this.weight = weight;
     }
 
     public String getName() {
@@ -43,7 +37,7 @@ public class Create {
     public void setLastnameoffahter(String lastnameoffahter) {
         this.lastnameoffahter = lastnameoffahter;
     }
-
+    
     public String getLastnameofmother() {
         return lastnameofmother;
     }
@@ -52,38 +46,36 @@ public class Create {
         this.lastnameofmother = lastnameofmother;
     }
 
-    public String getDate() {
+    public int getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(int date) {
         this.date = date;
     }
 
-    public String getMonth() {
+    public int getMonth() {
         return month;
     }
 
-    public void setMonth(String month) {
+    public void setMonth(int month) {
         this.month = month;
     }
 
-    public String getYear() {
+    public int getYear() {
         return year;
     }
 
-    public void setYear(String year) {
+    public void setYear(int year) {
         this.year = year;
     }
-
-    public String getWeight() {
-        return weight;
-    }
-
-    public void setWeight(String weight) {
-        this.weight = weight;
-    }
    
+   public String[] getArray(){
+        String[] datos ={String.valueOf(date), String.valueOf(month), String.valueOf(year)};
+        return datos;
+   }
+
+    
    
 
    
