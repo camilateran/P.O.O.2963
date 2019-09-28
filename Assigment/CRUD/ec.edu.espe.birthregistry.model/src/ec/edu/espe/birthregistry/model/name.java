@@ -5,14 +5,10 @@
  */
 package ec.edu.espe.birthregistry.model;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author DTj
  */
-public class Read {
-   
-     
+class name {
     
 }
