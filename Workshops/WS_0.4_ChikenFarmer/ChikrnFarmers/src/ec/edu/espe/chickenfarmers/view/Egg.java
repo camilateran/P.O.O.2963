@@ -1,9 +1,9 @@
 
-package ec.edu.espe.chikenfarmers.mode;
+package ec.edu.espe.chickenfarmers.view;
 
 /**
  *
- * @author Lenovo
+ * @author DTj
  */
 public class Egg {
     private int id;

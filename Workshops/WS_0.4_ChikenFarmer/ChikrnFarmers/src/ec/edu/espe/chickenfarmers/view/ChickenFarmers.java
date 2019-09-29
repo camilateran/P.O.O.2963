@@ -1,24 +1,36 @@
-
 package ec.edu.espe.chickenfarmers.view;
 
 //import ec.edu.espe.chickenfarmers.model.Chicken;
-import ec.edu.espe.chikenfarmers.mode.Chicken;
-import ec.edu.espe.chikenfarmers.mode.Coop;
-import java.util.ArrayList;
-
 public class ChickenFarmers {
-   
+
     public static void main(String[] args) {
-        Coop cp= new Coop();
-        Chicken ch[]= new Chicken[5];
-        ch[0] = new Chicken("Pam");
-        ch[1] = new Chicken("Lore");  
-        ch[2] = new Chicken("Panchi");
-        ch[3] = new Chicken("Pio");
-        ch[4] = new Chicken("Paty");
-        ch[0].doStuff(0);
-      
+
+        Chicken chicken1 = new Chicken();
+        System.out.println("--Farmer 1--");
+        chicken1.setName("Lucy");
+        chicken1.doStuff(0);
+        chicken1.setName("Lore");
+        chicken1.doStuff(1);
+        chicken1.setName("Lupita");
+        chicken1.doStuff(2);
+        chicken1.setName("Mily");
+        chicken1.doStuff(3);
+        chicken1.setName("Moly");
+        chicken1.doStuff(4);
+       
+        Chicken chicken2 = new Chicken();
+        System.out.println("--Farmer 2--");
+        chicken2.setName("Pilly");
+        chicken2.doStuff(0);
+        chicken2.setName("Gaby");
+        chicken2.doStuff(1);
+        chicken2.setName("Puly");
+        chicken2.doStuff(2);
+        chicken2.setName("Rita");
+        chicken2.doStuff(3);
+        chicken2.setName("Lucy");
+        chicken2.doStuff(4);   
+
     }
 
-    
 }
