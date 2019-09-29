@@ -15,9 +15,6 @@ public class Chicken {
     private String color;
     private int age;
     private boolean molting;
-    
-    String[] nameChicken = new String[5];
-
    
     public void doStuff(int forTime){
         System.out.println("My chicken" +name+"is doing things");
@@ -87,13 +84,6 @@ public class Chicken {
         this.molting = molting;
     }
 
-    public String[] getNameChicken() {
-        return nameChicken;
-    }
-
-    public void setNameChicken(String[] nameChicken) {
-        this.nameChicken = nameChicken;
-    }
     
 
 }

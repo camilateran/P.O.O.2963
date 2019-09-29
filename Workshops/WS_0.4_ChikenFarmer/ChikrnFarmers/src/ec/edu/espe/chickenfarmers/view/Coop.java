@@ -8,7 +8,7 @@ package ec.edu.espe.chickenfarmers.view;
 public class Coop {
     private int id;
     private Chicken[] chicken;
-    
+       
 public void add(Chicken chicken){
     
 }

@@ -4,9 +4,12 @@ package ec.edu.espe.chickenfarmers.view;
 public class ChickenFarmers {
 
     public static void main(String[] args) {
-
+        
+        String Farmer = "Carlos";
+        System.out.println("The name of the farme is: "+Farmer);
+       
         Chicken chicken1 = new Chicken();
-        System.out.println("--Farmer 1--");
+        System.out.println("--COOP 1--");
         chicken1.setName("Lucy");
         chicken1.doStuff(0);
         chicken1.setName("Lore");
@@ -19,7 +22,7 @@ public class ChickenFarmers {
         chicken1.doStuff(4);
        
         Chicken chicken2 = new Chicken();
-        System.out.println("--Farmer 2--");
+        System.out.println("--COOP 2--");
         chicken2.setName("Pilly");
         chicken2.doStuff(0);
         chicken2.setName("Gaby");
@@ -29,7 +32,7 @@ public class ChickenFarmers {
         chicken2.setName("Rita");
         chicken2.doStuff(3);
         chicken2.setName("Lucy");
-        chicken2.doStuff(4);   
+        chicken2.doStuff(4);
 
     }
 
