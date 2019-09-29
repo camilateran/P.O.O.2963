@@ -5,6 +5,7 @@
  */
 package ec.edu.espe.birthregistry.model;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -12,20 +13,17 @@ import java.util.Scanner;
  *
  * @author DTj
  */
-public class Read {
+public class FileCsv {
   Entry ent=new Entry();
   Scanner sc=new Scanner(System.in);
   String name;
   public void readInformation(){
-      //llamar a la funcion
-     ent.nameInformation();
-     ent.lastnameoffather();
-     ent.lastnameofmother();
-     ent.date();
-     ent.month();
-     ent.year();
+      ArrayList <Registry> registrybaby= new ArrayList();
+      registrybaby.add(new Registry());
       
-     
+      CsvWriter csvWriter = new CsvWriter("RegistryBaby.csv");
+      
+      
   }
 
     
