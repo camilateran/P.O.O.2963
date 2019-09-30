@@ -1,11 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package ec.edu.espe.birthregistry.model;
 
-import java.util.ArrayList;
+
+import com.csvreader.CsvReader;
+import java.io.FileReader;
+import java.util.Arrays;
 import java.util.Scanner;
 
 
@@ -18,13 +17,21 @@ public class FileCsv {
   Scanner sc=new Scanner(System.in);
   String name;
   public void readInformation(){
-      ArrayList <Registry> registrybaby= new ArrayList();
-      registrybaby.add(new Registry());
-      
-      CsvWriter csvWriter = new CsvWriter("RegistryBaby.csv");
-      
-      
+    /*try{
+      CsvReader reader = new CsvReader (new FileReader("RegistryBaby.csv"));  
+      String[] nextline;
+      while((nextline= reader.readNext())!= null)
+      {
+          if (nextline!= null)
+          {
+              System.out.println(Arrays.toString(nextline));
+          }
+      }
+    }catch(Exception e)
+    {
+        System.out.println(e);
+    }
+            */
   }
-
-    
+               
 }
