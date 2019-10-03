@@ -14,7 +14,7 @@ def my_filter (my_filter_fun, my_list):
         if my_filter_m(item) is True:
             result.append(item)
     return result
-
+#mapeo : permite que una lista vaya a una funcion y realice una actividad
 
 def my_map(my_map_func, my_list):
     result=[]
