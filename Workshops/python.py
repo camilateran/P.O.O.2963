@@ -1,0 +1,4 @@
+student= {
+    'name': 'wladymir',
+    
+}
