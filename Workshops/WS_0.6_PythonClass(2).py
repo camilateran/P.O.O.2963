@@ -11,7 +11,7 @@ class Student:
              class Phone
         class Phone:     
             def __init__(self, _number):
-                slf.number
+                self.number
 
     def __repr__(self):
         return 'Student({}, {}, {}, {})'.format(self.id, self.name, self.age, self.career)
