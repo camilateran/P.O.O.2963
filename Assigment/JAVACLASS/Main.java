@@ -13,7 +13,7 @@ public class Main{
                 
             }
         }
-        else{
+        else{            
             if (num%5==0){
                 System.out.println("El numero es divisible para 5");
                 Operacion1 op = new Operacion1(num);
