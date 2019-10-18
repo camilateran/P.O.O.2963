@@ -1,6 +1,7 @@
 public class Main{
+
     public static void main(String[] args){
-        int num=10;
+        int num=55444454;
 
         if (num>10){
             if(num%10==5 || num%10==0){
