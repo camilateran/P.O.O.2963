@@ -16,6 +16,12 @@ public class Data {
         this.lastname = lastname;
         this.phone = phone;
     }
+    public Data(String lastname){
+        this.lastname = lastname;
+    }
+    public Data(int phone){
+        this.phone = phone;
+    }
 
     public String getName() {
         return name;

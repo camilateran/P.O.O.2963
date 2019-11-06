@@ -6,6 +6,7 @@ import java.util.Scanner;
 import com.csvreader.CsvWriter;
 import java.io.File;
 import java.io.FileWriter;
+import java.util.Iterator;
 import javafx.scene.chart.PieChart.Data;
 
 public class Students {
@@ -21,10 +22,23 @@ public class Students {
         switch (op) {
             case 1:
                 List<Data> data = new ArrayList<Data>();
-                System.out.println("Ingrese nombre: ");
-                int p = in.nextInt();
-                data.add(new Data("camila", "teran", 929));
-
+                System.out.println("Enter lastname: ");
+                String ln = in.next();
+               // data.add(new Data(ln));
+                System.out.println("Grade 1: ");
+                float not1 = in.nextFloat();
+                //guaradar en clase data
+                System.out.println("Grade 2: ");
+                float not2 = in.nextFloat();
+                //
+                System.out.println("Grade 3: ");
+                float not3 = in.nextFloat();
+                //
+                
+                if (((not1+not2+not3)/3)>=14){
+                    
+                }
+                
                 CsvWriter csvWriter = new CsvWriter("student.csv");
 
                 for (Data data1 : data) {
@@ -34,8 +48,13 @@ public class Students {
                 }
                 csvWriter.close();
 
-              
                 break;
+            case 2:
+                System.out.println("List");
+                Iterator iter = data.iterator();
+                while (iter.hasNext()) {
+                    System.out.println(iter.next());
+                }
 
         }
 
