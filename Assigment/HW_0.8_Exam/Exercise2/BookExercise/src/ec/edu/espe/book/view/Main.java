@@ -1,6 +1,8 @@
 
 package ec.edu.espe.book.view;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 
@@ -11,6 +13,8 @@ public class Main {
         Book books = new Book();
         int op;
         int cont =0;
+        List<Book> book = new ArrayList();     
+        
         do{
             
             books.listBook();
