@@ -18,30 +18,58 @@ public class Movie {
         this.year= year;
         this.synopsis = synopsis;
     }
-
-    
-    public void listmovie(String title, String synopsis, int year, String genre){
-        Scanner in = new Scanner(System.in);
-        Director director = new Director();
-        List movie = new ArrayList();
-        movie.add(title);
-        movie.add(synopsis);
-        movie.add(year);
-        movie.add(genre);
-        System.out.println("Enter name director: ");
-        String name = in.nextLine();
-        movie.add(name= director.getName());
-        System.out.println("Enter lastname: ");
-        String lastname = in.nextLine();
-        movie.add(lastname = director.getLastname());
-        System.out.println("Enter country: ");
-        String country = in.nextLine();
-        movie.add(country = director.getCountry());
-        System.out.println(movie);
-        
-     
+    public Movie(){
         
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getSynopsis() {
+        return synopsis;
+    }
+
+    public void setSynopsis(String synopsis) {
+        this.synopsis = synopsis;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+    
+    
+    public void showmoviedata(String title, String synopsis, int year, String genre, String name, String lastname,String country){
+        
+        List movie = new ArrayList();
+        Director director = new Director();
+        movie.add(getTitle());
+        movie.add(getSynopsis());
+        movie.add(getYear());
+        movie.add(getGenre());
+        movie.add(director.getName());
+        movie.add(director.getLastname());
+        movie.add(director.getCountry());
+        System.out.println("-->" +movie);
+        
+    }   
+    
     
     
 }

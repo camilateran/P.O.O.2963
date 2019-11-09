@@ -40,8 +40,5 @@ public class Director {
     public void setCountry(String country) {
         this.country = country;
     }
-    
-    
- 
-    
+       
 }
