@@ -72,10 +72,10 @@ public class Movie {
         movie.add(getSynopsis());
         movie.add(getYear());
         movie.add(getGenre());
-        movie.add(director.getName());
-        movie.add(director.getLastname());
-        movie.add(director.getCountry());
-        System.out.println("-->" +movie);
+        movie.add(getDirector().getName());
+        movie.add(getDirector().getLastname());
+        movie.add(getDirector().getCountry());
+        System.out.println(">" +movie);
         
     }   
     
