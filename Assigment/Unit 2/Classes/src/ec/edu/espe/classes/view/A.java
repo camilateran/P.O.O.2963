@@ -10,6 +10,7 @@ package ec.edu.espe.classes.view;
  * @author DTj
  */
 public class A {
+    
     private int m;
     private float n;
     private B b;
