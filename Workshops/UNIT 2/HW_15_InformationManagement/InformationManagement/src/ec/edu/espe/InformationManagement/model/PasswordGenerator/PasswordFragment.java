@@ -3,15 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.InformationManagement.model.Account;
+package ec.edu.espe.InformationManagement.model.PasswordGenerator;
 
 /**
  *
- * @author DTj
+ * @author camyt
  */
-public class UserName {
+public class PasswordFragment {
     
-    public void useAccount(){
+    public void informationUser(){
         
     }
 }

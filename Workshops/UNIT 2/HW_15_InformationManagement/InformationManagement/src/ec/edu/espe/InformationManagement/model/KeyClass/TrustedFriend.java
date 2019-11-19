@@ -9,7 +9,13 @@ package ec.edu.espe.InformationManagement.model.KeyClass;
  *
  * @author DTj
  */
-public class TrustedFriends {
+public class TrustedFriend extends User {
     
+    public void browseListofAccount(){
+        
+    }
     
+    public void viewSharedAccountInf(){
+        
+    }
 }

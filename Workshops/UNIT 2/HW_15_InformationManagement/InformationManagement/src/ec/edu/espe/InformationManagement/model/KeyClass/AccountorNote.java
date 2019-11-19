@@ -17,5 +17,11 @@ public class AccountorNote extends InformationNode{
     protected Date createdonDate;
     protected Date lastModifiedOnDate;
     
+    public void viewAccount(){
+        
+    }
+    public void recorderInformationOwner(){
+        
+    }
     
 }

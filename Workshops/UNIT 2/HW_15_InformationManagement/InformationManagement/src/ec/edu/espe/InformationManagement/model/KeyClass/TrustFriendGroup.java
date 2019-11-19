@@ -11,11 +11,15 @@ import java.util.List;
  *
  * @author DTj
  */
-public class TrustFriendsGroups {
+public class TrustFriendGroup {
     private int label;
    
     List <AccountorNote> accountornote;
-    List<TrustFriendsGroups> trustFriendsGroups;
+    List<TrustFriendGroup> trustFriendsGroups;
+    
+    public void definedInformationOwner(){
+        
+    }
     
 
 }

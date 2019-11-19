@@ -3,15 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.InformationManagement.model.Account;
+package ec.edu.espe.InformationManagement.model.LoginGUI;
 
 /**
  *
- * @author DTj
+ * @author camyt
  */
-public class UserName {
+public class Form {
     
-    public void useAccount(){
-        
-    }
 }

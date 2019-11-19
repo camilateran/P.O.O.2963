@@ -11,17 +11,24 @@ package ec.edu.espe.InformationManagement.model.KeyClass;
  */
 public class SystemAdminUser extends User{
     
-    //add
-    public User addUser(){
+   public void ManagerPAPIS(){
+   }
+    
+    public User addNewUser(){
         return new User();
     }
-    //delete
-    public String DeleteUser(){
+    
+    public String deleteUser(){
         Exception e = null;
         return e.getMessage();
     }
-    //edit
+    
     public User editUser(User user){
         return user;
     }
+    
+    public User archiveUser(){
+        return new User();
+    }    
+
 }

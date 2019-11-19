@@ -5,10 +5,27 @@
  */
 package ec.edu.espe.InformationManagement.model.Account;
 
+import ec.edu.espe.InformationManagement.model.KeyClass.Account;
+import ec.edu.espe.InformationManagement.model.PasswordGenerator.EndDate;
+import ec.edu.espe.InformationManagement.model.PasswordGenerator.InformationUser;
+import ec.edu.espe.InformationManagement.model.PasswordGenerator.StartDate;
+import java.util.List;
+
 /**
  *
  * @author DTj
  */
 public class Password {
+    
+    List<StartDate> startDate;
+    List<EndDate> endDate;
+    List<InformationUser> informationUser;
+    List<Account> account;
+      
+    
+    
+    public void useAccount(){
+        
+    }
     
 }

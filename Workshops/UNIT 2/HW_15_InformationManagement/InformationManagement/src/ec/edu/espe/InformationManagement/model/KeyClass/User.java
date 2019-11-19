@@ -5,7 +5,9 @@
  */
 package ec.edu.espe.InformationManagement.model.KeyClass;
 
-import sun.security.util.Password;
+import ec.edu.espe.InformationManagement.model.Account.Password;
+import ec.edu.espe.InformationManagement.model.Account.UserName;
+
 
 /**
  *
@@ -17,14 +19,24 @@ public class User {
     protected String fullname;
     protected String emailAddress;
     protected boolean isActive;
+    //protected SetofActiveUser setofactive;
     
-    public void ChechPassword(Password password){
+    public void checkPassword(Password password){
         
     }
-    public TrustFriendsGroups getTrustFriendsGroups(){
-        return new TrustFriendsGroups();
+    public TrustFriendGroup getTrustFriendsGroups(){
+        return new TrustFriendGroup();
     }
     public User(){
+        
+    }
+    public void longOn (UserName username, Password password){
+        
+    }
+    public void modifyOwnPAPIS(){
+        
+    }
+    public void logOff(){
         
     }
 }

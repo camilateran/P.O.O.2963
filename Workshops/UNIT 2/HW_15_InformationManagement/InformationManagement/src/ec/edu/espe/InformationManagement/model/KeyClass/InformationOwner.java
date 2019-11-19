@@ -13,7 +13,28 @@ import java.util.List;
  */
 public class InformationOwner extends User {
     
-    private List<TrustFriendsGroups> trustFriendsGroup;
+    private List<TrustFriendGroup> trustFriendGroup;
     private List<AccountorNote> accountornote;
+    
+    public void storeInformation(Account account){
+        
+      
+    }
+    public void storePersonalNotes(){
+        
+    }
+    public void grantAccess(){
+        
+    }
+    //PARTE DE STOREINFORMATION
+    public void storeAccountInformationWeb(){
+        
+    }
+    public void storeAccountInformation(){
+        
+    }
+    public void storeLoginInformation(){
+        
+    }
     
 }

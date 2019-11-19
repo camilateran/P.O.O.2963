@@ -10,6 +10,7 @@ import ec.edu.espe.InformationManagement.model.Account.Password;
 import ec.edu.espe.InformationManagement.model.Account.Property;
 import ec.edu.espe.InformationManagement.model.Account.Reminder;
 import ec.edu.espe.InformationManagement.model.Account.UserName;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -17,13 +18,23 @@ import java.util.List;
  * @author DTj
  */
 public class Account extends AccountorNote{
+    
+    protected int label;
+    protected Date createdonDate;
+    protected Date lastModifiedOnDate;
+    
+    
     protected UserName username;
     protected Password password;
+    protected Comment coment;
     protected List<Property> property;
     protected List<Reminder> reminder;
-    protected Comment coment;
     
-   
+    
+    /*public void comment(){
+        
+    }
+   */
     
     
     
