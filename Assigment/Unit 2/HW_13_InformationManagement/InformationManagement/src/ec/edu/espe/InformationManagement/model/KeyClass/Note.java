@@ -1,0 +1,27 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ec.edu.espe.InformationManagement.model.KeyClass;
+
+/**
+ *
+ * @author DTj
+ */
+public class Note extends AccountorNote {
+    private String NoteText; 
+
+    public Note(String NoteText) {
+        this.NoteText = NoteText;
+    }
+
+    public String getNoteText() {
+        return NoteText;
+    }
+
+    public void setNoteText(String NoteText) {
+        this.NoteText = NoteText;
+    }
+    
+}
