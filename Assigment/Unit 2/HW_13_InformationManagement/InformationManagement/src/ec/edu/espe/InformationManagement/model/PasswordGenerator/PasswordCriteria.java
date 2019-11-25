@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -17,6 +18,18 @@ public class PasswordCriteria {
     private int passwordUniquenessPeriod;
     private int passwordUniquenessCount;
     private String usePasswordFragments;
+
+    public PasswordCriteria(String minimumLength, String includeUpperCase, int includeNumbers, String specialCharsToInclude, String charsToExclude, String mustStartWithLetter, int passwordUniquenessPeriod, int passwordUniquenessCount, String usePasswordFragments) {
+        this.minimumLength = minimumLength;
+        this.includeUpperCase = includeUpperCase;
+        this.includeNumbers = includeNumbers;
+        this.specialCharsToInclude = specialCharsToInclude;
+        this.charsToExclude = charsToExclude;
+        this.mustStartWithLetter = mustStartWithLetter;
+        this.passwordUniquenessPeriod = passwordUniquenessPeriod;
+        this.passwordUniquenessCount = passwordUniquenessCount;
+        this.usePasswordFragments = usePasswordFragments;
+    }
 
     
     

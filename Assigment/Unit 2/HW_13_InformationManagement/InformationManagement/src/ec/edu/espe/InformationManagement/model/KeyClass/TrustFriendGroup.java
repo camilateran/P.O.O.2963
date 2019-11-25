@@ -24,6 +24,7 @@ public class TrustFriendGroup {
     }
     private List <AccountorNote> accountornote;
     private List<TrustFriendGroup> trustFriendsGroups = new ArrayList<>();  
+    
   
     
     public void definedInformationOwner(){
@@ -35,6 +36,9 @@ public class TrustFriendGroup {
         friendGroup.add("Job");
         friendGroup.add("School");
         System.out.println(friendGroup);
+        
+        //List<TrustFriendGroup> trustFriendsGroups = new ArrayList<>();
+       // trustFriendsGroups.add(new TrustFriendGroup);
     }
    
    

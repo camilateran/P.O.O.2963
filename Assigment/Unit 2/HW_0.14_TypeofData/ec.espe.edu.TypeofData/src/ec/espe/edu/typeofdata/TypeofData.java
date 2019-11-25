@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author camyt
  */
-public class EcEspeEduTypeofData {
+public class TypeofData {
 
     /**
      * @param args the command line arguments

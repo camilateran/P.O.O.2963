@@ -11,15 +11,12 @@ package ec.espe.edu.typeofdata;
  */
 public class Operation {
     public void verificateName(String name){
-        boolean verificate = true;
-        if(name.equals(name));
-        {
-           
-        }
+        char c='c';
+        System.out.println(c);
     }
     
     public void Year(int year){
-        System.out.println("\"Your age is: "+(2020-year));
+        System.out.println("\"Your age is: "+(2019-year));
     }
     public void comment(float note1, float note2){
         double note12 = note1+note2;
