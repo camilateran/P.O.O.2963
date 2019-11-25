@@ -24,8 +24,41 @@ public class DateLibery {
     int anos = Integer.parseInt(dat2[2]) - Integer.parseInt(dat1[2]);
     int mes = Integer.parseInt(dat2[1]) - Integer.parseInt(dat1[1]);
     int dias =  Integer.parseInt(dat2[0]) - Integer.parseInt(dat1[0]);
+   
+    // despues de hoy
+        
+    if((Integer.parseInt(dat1[0]) >  Integer.parseInt(dat2[0])) && (Integer.parseInt(dat1[1]) >  Integer.parseInt(dat2[1])) && 
+            (Integer.parseInt(dat1[2]) >  Integer.parseInt(dat2[2]))){
+        System.out.println("Error");
+    } 
+    if (Integer.parseInt(dat1[1])==2){
+        if(Integer.parseInt(dat1[0]) >28){
+            System.out.println("Error");
+        }
+    }
     
-    
+    if((Integer.parseInt(dat1[1])==1) || (Integer.parseInt(dat1[1])==3) ||(Integer.parseInt(dat1[1])==5)||(Integer.parseInt(dat1[1])==7)||
+            (Integer.parseInt(dat1[1])==8)||(Integer.parseInt(dat1[1])==10)||(Integer.parseInt(dat1[1])==12)){
+        if(Integer.parseInt(dat1[0])>31){
+            System.out.println("ERROR");
+        }
+    }
+     
+    if((Integer.parseInt(dat1[1])==4) || (Integer.parseInt(dat1[1])==6) ||(Integer.parseInt(dat1[1])==9)||(Integer.parseInt(dat1[1])==11)){
+        if(Integer.parseInt(dat1[0])>30){
+            System.out.println("ERROR");
+        }
+    if(Integer.parseInt(dat1[0])<=0){
+        System.out.println("Error");
+    }
+    if(Integer.parseInt(dat1[1])>12){
+        System.out.println("Error");
+    }
+    if(Integer.parseInt(dat1[1])<1){
+        System.out.println("Error");
+    }
+        
+    }
     
 }
 }
