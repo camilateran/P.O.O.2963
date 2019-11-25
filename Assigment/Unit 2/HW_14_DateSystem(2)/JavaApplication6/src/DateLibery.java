@@ -1,5 +1,6 @@
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 /*
@@ -14,7 +15,7 @@ import java.util.Date;
  */
 public class DateLibery {
     
-     public void edad(String fecha_nac) {    
+     public ArrayList<Integer> edad(String fecha_nac) {    
    
     Date fechaActual = new Date();
     SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
@@ -25,6 +26,7 @@ public class DateLibery {
     int mes = Integer.parseInt(dat2[1]) - Integer.parseInt(dat1[1]);
     int dias =  Integer.parseInt(dat2[0]) - Integer.parseInt(dat1[0]);
    
+    
     // despues de hoy
         
     if((Integer.parseInt(dat1[0]) >  Integer.parseInt(dat2[0])) && (Integer.parseInt(dat1[1]) >  Integer.parseInt(dat2[1])) && 
@@ -59,6 +61,13 @@ public class DateLibery {
     }
         
     }
+    
+    ArrayList<Integer> dates = new ArrayList<Integer>();
+    dates.add(anos);
+    dates.add(mes);
+    dates.add(dias);
+    
+    return dates;
     
 }
 }
