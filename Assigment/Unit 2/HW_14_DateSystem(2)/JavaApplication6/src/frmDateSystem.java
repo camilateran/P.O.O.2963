@@ -31,64 +31,96 @@ public class frmDateSystem extends javax.swing.JFrame {
 
         lblDate = new javax.swing.JLabel();
         txtFecha_Nac = new javax.swing.JTextField();
-        lblResult = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         lblYear = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        lblMonth = new javax.swing.JLabel();
+        lblMonths = new javax.swing.JLabel();
+        lblday = new javax.swing.JLabel();
+        lblDay = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        lblDate.setFont(new java.awt.Font("Segoe UI Emoji", 1, 14)); // NOI18N
         lblDate.setText("Date");
-
-        lblResult.setText("Result");
 
         jLabel1.setText("Year:");
 
         lblYear.setText(".");
 
-        jButton1.setText("Calculation");
+        jButton1.setText("Calculate");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
+        lblMonth.setText("Month:");
+
+        lblMonths.setText(".");
+
+        lblday.setText("Day:");
+
+        lblDay.setText(".");
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI Emoji", 1, 18)); // NOI18N
+        jLabel2.setText("Calculate Date");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(64, 64, 64)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblDate)
-                    .addComponent(lblResult))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(108, 108, 108)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblday)
+                            .addComponent(jLabel1)
+                            .addComponent(lblMonth))
                         .addGap(31, 31, 31)
-                        .addComponent(txtFecha_Nac, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton1))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblDay, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblYear, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblMonths, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel1)
-                        .addGap(18, 18, 18)
-                        .addComponent(lblYear, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(56, Short.MAX_VALUE))
+                        .addGap(64, 64, 64)
+                        .addComponent(lblDate, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(26, 26, 26)
+                                .addComponent(jLabel2))
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtFecha_Nac, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(39, 39, 39)
+                                .addComponent(jButton1)))))
+                .addContainerGap(66, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(76, 76, 76)
+                .addGap(24, 24, 24)
+                .addComponent(jLabel2)
+                .addGap(36, 36, 36)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblDate)
+                    .addComponent(lblDate, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtFecha_Nac, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton1))
                 .addGap(24, 24, 24)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblResult)
                     .addComponent(jLabel1)
                     .addComponent(lblYear))
-                .addContainerGap(163, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblMonth)
+                    .addComponent(lblMonths))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblDay)
+                    .addComponent(lblday))
+                .addContainerGap(51, Short.MAX_VALUE))
         );
 
         pack();
@@ -104,6 +136,8 @@ public class frmDateSystem extends javax.swing.JFrame {
         String mes = Integer.toString(dates.get(1));
         String dias = Integer.toString(dates.get(2));
         lblYear.setText(year);
+        lblMonths.setText(mes);
+        lblDay.setText(dias);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -144,9 +178,13 @@ public class frmDateSystem extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel lblDate;
-    private javax.swing.JLabel lblResult;
+    private javax.swing.JLabel lblDay;
+    private javax.swing.JLabel lblMonth;
+    private javax.swing.JLabel lblMonths;
     private javax.swing.JLabel lblYear;
+    private javax.swing.JLabel lblday;
     private javax.swing.JTextField txtFecha_Nac;
     // End of variables declaration//GEN-END:variables
 }
