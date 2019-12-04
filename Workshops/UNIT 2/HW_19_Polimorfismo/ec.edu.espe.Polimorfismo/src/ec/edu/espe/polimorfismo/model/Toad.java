@@ -36,6 +36,11 @@ public class Toad extends Amphibian{
     public void setSpotColor(String spotColor) {
         this.spotColor = spotColor;
     }
+
+    @Override
+    public String getData() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     

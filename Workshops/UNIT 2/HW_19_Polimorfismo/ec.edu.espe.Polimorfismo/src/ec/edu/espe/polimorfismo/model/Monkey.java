@@ -36,6 +36,11 @@ public class Monkey extends Mammal{
     public void setTailLength(int tailLength) {
         this.tailLength = tailLength;
     }
+
+    @Override
+    public String getData() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     

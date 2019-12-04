@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="LoNuestroR&amp;ESystem">
+  <ClassDiagramComponents>
+    <Class name="DishManager" package="ec.edu.espe.restaurantSystem.controller" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="dataEntry" returnType="Product" visibility="public"/>
+        <Method name="addDish" returnType="void" visibility="public">
+          <Argument type="Product" name="newDish"/>
+        </Method>
+        <Method name="readDishes" returnType="ArrayList&lt;Product&gt;" visibility="public"/>
+        <Method name="searchDish" returnType="Product" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="upgradeDish" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Product&gt;" name="arrDish"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="EventManager" package="ec.edu.espe.restaurantSystem.controller" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="calculatePrice" returnType="float" visibility="public">
+          <Argument type="Event" name="event"/>
+        </Method>
+        <Method name="checkAvailability" returnType="boolean" visibility="public">
+          <Argument type="Date" name="date"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ExtraServiceManager" package="ec.edu.espe.restaurantSystem.controller" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="calculateDiscount" returnType="boolean" visibility="public">
+          <Argument type="Event" name="event"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="frmEvent" package="ec.edu.espe.restaurantSystem.controller" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="frmOrder" package="ec.edu.espe.restaurantSystem.controller" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="btnSave" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPopupMenu1" type="javax.swing.JPopupMenu" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTable1" type="javax.swing.JTable" visibility="private"/>
+        <Field name="lblPrice" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="pomAdd" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="txtAddress" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txtDni" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="txtNameOrder" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="InformationEvent" package="ec.edu.espe.restaurantSystem.controller" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="calculatePrice" returnType="float" visibility="public"/>
+        <Method name="checkAvailability" returnType="boolean" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="InformationExtraService" package="ec.edu.espe.restaurantSystem.controller" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="calculateDiscount" returnType="boolean" visibility="public">
+          <Argument type="int" name="ExtraService"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="OrderManager" package="ec.edu.espe.restaurantSystem.controller" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="dataEntry" returnType="Order" visibility="public"/>
+        <Method name="addOrder" returnType="void" visibility="public">
+          <Argument type="Order" name="newOrder"/>
+        </Method>
+        <Method name="readOrders" returnType="ArrayList&lt;Order&gt;" visibility="public"/>
+        <Method name="searchOrder" returnType="Order" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="upgradeOrder" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Order&gt;" name="arrOrder"/>
+        </Method>
+        <Method name="dishesOrder" returnType="ArrayList&lt;Product&gt;" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="FileLibrary" package="ec.edu.espe.restaurantSystem.lib" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields>
+        <Field name="gson" type="Gson" visibility="package" isStatic="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="addToFile" returnType="void" visibility="public" isStatic="true">
+          <Argument type="Object" name="object"/>
+        </Method>
+        <Method name="readObjects" returnType="ArrayList&lt;Object&gt;" visibility="public" isStatic="true">
+          <Argument type="Object" name="object"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Dish" package="ec.edu.espe.restaurantSystem.model" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields>
+        <Field name="type" type="String" visibility="package"/>
+        <Field name="weight" type="int" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Drink" package="ec.edu.espe.restaurantSystem.model" visibility="public" xPosition="620.0" yPosition="420.0">
+      <Fields>
+        <Field name="quantity" type="int" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Event" package="ec.edu.espe.restaurantSystem.model" visibility="public" xPosition="920.0" yPosition="420.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="time" type="int" visibility="private"/>
+        <Field name="date" type="Date" visibility="private"/>
+        <Field name="typeEvent" type="String" visibility="private"/>
+        <Field name="menu" type="ArrayList&lt;Product&gt;" visibility="private"/>
+        <Field name="guests" type="int" visibility="private"/>
+        <Field name="extraService" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="int" name="time"/>
+          <Argument type="Date" name="date"/>
+          <Argument type="String" name="typeEvent"/>
+          <Argument type="ArrayList&lt;Product&gt;" name="menu"/>
+          <Argument type="int" name="guests"/>
+          <Argument type="int" name="extraService"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getTime" returnType="int" visibility="public"/>
+        <Method name="setTime" returnType="void" visibility="public">
+          <Argument type="int" name="time"/>
+        </Method>
+        <Method name="getDate" returnType="Date" visibility="public"/>
+        <Method name="setDate" returnType="void" visibility="public">
+          <Argument type="Date" name="date"/>
+        </Method>
+        <Method name="getTypeEvent" returnType="String" visibility="public"/>
+        <Method name="setTypeEvent" returnType="void" visibility="public">
+          <Argument type="String" name="typeEvent"/>
+        </Method>
+        <Method name="getMenu" returnType="ArrayList&lt;Product&gt;" visibility="public"/>
+        <Method name="setMenu" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Product&gt;" name="menu"/>
+        </Method>
+        <Method name="getGuests" returnType="int" visibility="public"/>
+        <Method name="setGuests" returnType="void" visibility="public">
+          <Argument type="int" name="guests"/>
+        </Method>
+        <Method name="getExtraService" returnType="int" visibility="public"/>
+        <Method name="setExtraService" returnType="void" visibility="public">
+          <Argument type="int" name="extraService"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ExtraService" package="ec.edu.espe.restaurantSystem.model" visibility="public" xPosition="1220.0" yPosition="420.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="nameService" type="String" visibility="private"/>
+        <Field name="priceService" type="float" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="nameService"/>
+          <Argument type="float" name="priceService"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getNameService" returnType="String" visibility="public"/>
+        <Method name="setNameService" returnType="void" visibility="public">
+          <Argument type="String" name="nameService"/>
+        </Method>
+        <Method name="getPriceService" returnType="float" visibility="public"/>
+        <Method name="setPriceService" returnType="void" visibility="public">
+          <Argument type="float" name="priceService"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Ingredient" package="ec.edu.espe.restaurantSystem.model" visibility="public" xPosition="1520.0" yPosition="420.0">
+      <Fields>
+        <Field name="id" type="int" visibility="package"/>
+        <Field name="name" type="String" visibility="package"/>
+        <Field name="quantity" type="double" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Order" package="ec.edu.espe.restaurantSystem.model" visibility="public" xPosition="1820.0" yPosition="420.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="dni" type="String" visibility="private"/>
+        <Field name="address" type="String" visibility="private"/>
+        <Field name="dishList" type="List&lt;Product&gt;" visibility="private"/>
+        <Field name="priceOrder" type="float" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="dni"/>
+          <Argument type="String" name="address"/>
+          <Argument type="ArrayList&lt;Product&gt;" name="dishList"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getDni" returnType="String" visibility="public"/>
+        <Method name="setDni" returnType="void" visibility="public">
+          <Argument type="String" name="dni"/>
+        </Method>
+        <Method name="getAddress" returnType="String" visibility="public"/>
+        <Method name="setAddress" returnType="void" visibility="public">
+          <Argument type="String" name="address"/>
+        </Method>
+        <Method name="getDishList" returnType="List&lt;Product&gt;" visibility="public"/>
+        <Method name="setDishList" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Product&gt;" name="dishList"/>
+        </Method>
+        <Method name="getPriceOrder" returnType="float" visibility="public"/>
+        <Method name="setPriceOrder" returnType="void" visibility="public">
+          <Argument type="float" name="priceOrder"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Product" package="ec.edu.espe.restaurantSystem.model" visibility="public" xPosition="2120.0" yPosition="420.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="nameDish" type="String" visibility="private"/>
+        <Field name="price" type="float" visibility="private"/>
+        <Field name="ingredients" type="ArrayList&lt;Ingredient&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="float" name="price"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getPrice" returnType="float" visibility="public"/>
+        <Method name="setPrice" returnType="void" visibility="public">
+          <Argument type="float" name="price"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Sale" package="ec.edu.espe.restaurantSystem.model" visibility="public" xPosition="20.0" yPosition="820.0">
+      <Fields>
+        <Field name="orderSale" type="List&lt;Order&gt;" visibility="private"/>
+        <Field name="eventSale" type="List&lt;Event&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="ArrayList&lt;Order&gt;" name="orderSale"/>
+          <Argument type="ArrayList&lt;Event&gt;" name="eventSale"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getOrderSale" returnType="List&lt;Order&gt;" visibility="public"/>
+        <Method name="setOrderSale" returnType="void" visibility="public">
+          <Argument type="List&lt;Order&gt;" name="orderSale"/>
+        </Method>
+        <Method name="getEventSale" returnType="List&lt;Event&gt;" visibility="public"/>
+        <Method name="setEventSale" returnType="void" visibility="public">
+          <Argument type="List&lt;Event&gt;" name="eventSale"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="frmDish" package="ec.edu.espe.restaurantSystem.view" visibility="public" xPosition="320.0" yPosition="820.0">
+      <Fields>
+        <Field name="btnAddDish" type="javax.swing.JButton" visibility="private"/>
+        <Field name="btnSearchPicture" type="javax.swing.JButton" visibility="private"/>
+        <Field name="gbtType" type="javax.swing.ButtonGroup" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jSpinner1" type="javax.swing.JSpinner" visibility="private"/>
+        <Field name="jTextField2" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="lblPicture" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="rbtCompanion" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="rbtDessert" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="rbtDrink" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="rbtMainCourse" type="javax.swing.JRadioButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents
+void" visibility="private"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="RestaurantManager" package="ec.edu.espe.restaurantSystem.view" visibility="public" xPosition="620.0" yPosition="820.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="ec.edu.espe.restaurantSystem.model.Event" target="ec.edu.espe.restaurantSystem.model.Product" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.restaurantSystem.controller.OrderManager" target="ec.edu.espe.restaurantSystem.model.Product" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.restaurantSystem.model.Sale" target="ec.edu.espe.restaurantSystem.model.Event" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.restaurantSystem.controller.EventManager" target="ec.edu.espe.restaurantSystem.model.Event" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.restaurantSystem.controller.DishManager" target="ec.edu.espe.restaurantSystem.model.Product" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="eventSale" source="ec.edu.espe.restaurantSystem.model.Sale" target="ec.edu.espe.restaurantSystem.model.Event" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Event&gt;"/>
+    <UseRelation source="ec.edu.espe.restaurantSystem.controller.OrderManager" target="ec.edu.espe.restaurantSystem.model.Order" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="ec.edu.espe.restaurantSystem.model.Dish" target="ec.edu.espe.restaurantSystem.model.Product"/>
+    <HasRelation name="menu" source="ec.edu.espe.restaurantSystem.model.Event" target="ec.edu.espe.restaurantSystem.model.Product" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Product&gt;"/>
+    <UseRelation source="ec.edu.espe.restaurantSystem.controller.ExtraServiceManager" target="ec.edu.espe.restaurantSystem.model.Event" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="ingredients" source="ec.edu.espe.restaurantSystem.model.Product" target="ec.edu.espe.restaurantSystem.model.Ingredient" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Ingredient&gt;"/>
+    <UseRelation source="ec.edu.espe.restaurantSystem.model.Sale" target="ec.edu.espe.restaurantSystem.model.Order" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="ec.edu.espe.restaurantSystem.model.Drink" target="ec.edu.espe.restaurantSystem.model.Product"/>
+    <UseRelation source="ec.edu.espe.restaurantSystem.model.Order" target="ec.edu.espe.restaurantSystem.model.Product" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="orderSale" source="ec.edu.espe.restaurantSystem.model.Sale" target="ec.edu.espe.restaurantSystem.model.Order" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Order&gt;"/>
+    <HasRelation name="dishList" source="ec.edu.espe.restaurantSystem.model.Order" target="ec.edu.espe.restaurantSystem.model.Product" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Product&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

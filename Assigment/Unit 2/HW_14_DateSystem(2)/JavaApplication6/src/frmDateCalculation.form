@@ -106,6 +106,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtYear">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value="Enter the number of the year"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtYearActionPerformed"/>
         <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtYearKeyReleased"/>
@@ -132,6 +135,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtMonth">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value="Enter a number of the month"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtMonthActionPerformed"/>
         <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtMonthKeyReleased"/>
@@ -139,6 +145,9 @@
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtDay">
+      <Properties>
+        <Property name="toolTipText" type="java.lang.String" value="Enter the number of the day"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtDayActionPerformed"/>
         <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtDayKeyReleased"/>

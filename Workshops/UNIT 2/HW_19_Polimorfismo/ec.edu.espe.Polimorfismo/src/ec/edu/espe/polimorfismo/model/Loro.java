@@ -38,6 +38,11 @@ public class Loro extends Bird{
     public void setTalk(String talk) {
         this.talk = talk;
     }
+
+    @Override
+    public String getData() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     

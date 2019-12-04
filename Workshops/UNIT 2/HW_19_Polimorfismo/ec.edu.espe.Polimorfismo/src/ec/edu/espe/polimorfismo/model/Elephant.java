@@ -35,6 +35,11 @@ public class Elephant extends Mammal {
     public void setTrunkLenght(int trunkLenght) {
         this.trunkLenght = trunkLenght;
     }
+
+    @Override
+    public String getData() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
     

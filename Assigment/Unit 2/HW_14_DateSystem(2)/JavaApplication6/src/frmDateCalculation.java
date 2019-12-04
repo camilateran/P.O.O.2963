@@ -87,6 +87,7 @@ public class frmDateCalculation extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Sitka Text", 1, 14)); // NOI18N
         jLabel1.setText("Year: ");
 
+        txtYear.setToolTipText("Enter the number of the year");
         txtYear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtYearActionPerformed(evt);
@@ -112,6 +113,7 @@ public class frmDateCalculation extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Sitka Text", 1, 14)); // NOI18N
         jLabel2.setText("Month:");
 
+        txtMonth.setToolTipText("Enter a number of the month");
         txtMonth.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtMonthActionPerformed(evt);
@@ -126,6 +128,7 @@ public class frmDateCalculation extends javax.swing.JFrame {
             }
         });
 
+        txtDay.setToolTipText("Enter the number of the day");
         txtDay.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtDayActionPerformed(evt);
@@ -255,7 +258,7 @@ public class frmDateCalculation extends javax.swing.JFrame {
             txtYear.setText("");
             txtYear.requestFocus();   
         }
-        if(txtYear.getText().length()>5){
+        if(txtYear.getText().length()>4){
             getToolkit().beep();
             evt.consume();
             JOptionPane.showMessageDialog(rootPane, "Incorrect number of digits");
@@ -373,7 +376,7 @@ public class frmDateCalculation extends javax.swing.JFrame {
             txtDay.setText("");
             txtDay.requestFocus();   
         }
-        if(txtDay.getText().length()>3){
+        if(txtDay.getText().length()>2){
             getToolkit().beep();
             evt.consume();
             JOptionPane.showMessageDialog(rootPane, "Incorrect number of digits");

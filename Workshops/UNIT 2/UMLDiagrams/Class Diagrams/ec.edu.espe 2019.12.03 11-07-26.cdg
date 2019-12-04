@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="ec.edu.espe">
+  <ClassDiagramComponents>
+    <Class name="Amphibian" package="ec.edu.espe.polimorfismo.model" visibility="public" isAbstract="true" xPosition="204.0" yPosition="522.0">
+      <Fields>
+        <Field name="metamorphosis" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="metamorphosis"/>
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="gender"/>
+          <Argument type="float" name="weight"/>
+          <Argument type="Cage" name="cage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="isMetamorphosis" returnType="boolean" visibility="public"/>
+        <Method name="setMetamorphosis" returnType="void" visibility="public">
+          <Argument type="boolean" name="metamorphosis"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Animal" package="ec.edu.espe.polimorfismo.model" visibility="public" isAbstract="true" xPosition="786.0" yPosition="82.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="gender" type="String" visibility="private"/>
+        <Field name="weight" type="float" visibility="private"/>
+        <Field name="cage" type="Cage" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="gender"/>
+          <Argument type="float" name="weight"/>
+          <Argument type="Cage" name="cage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getData" returnType="String" visibility="public" isAbstract="true"/>
+        <Method name="run" returnType="void" visibility="public"/>
+        <Method name="run" returnType="void" visibility="public">
+          <Argument type="int" name="speed"/>
+        </Method>
+        <Method name="run" returnType="void" visibility="public">
+          <Argument type="String" name="park"/>
+        </Method>
+        <Method name="run" returnType="void" visibility="public">
+          <Argument type="String" name="park"/>
+          <Argument type="float" name="speed"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="feed" returnType="boolean" visibility="public"/>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getGender" returnType="String" visibility="public"/>
+        <Method name="setGender" returnType="void" visibility="public">
+          <Argument type="String" name="gender"/>
+        </Method>
+        <Method name="getWeight" returnType="float" visibility="public"/>
+        <Method name="setWeight" returnType="void" visibility="public">
+          <Argument type="float" name="weight"/>
+        </Method>
+        <Method name="getCage" returnType="Cage" visibility="public"/>
+        <Method name="setCage" returnType="void" visibility="public">
+          <Argument type="Cage" name="cage"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Bird" package="ec.edu.espe.polimorfismo.model" visibility="public" isAbstract="true" xPosition="713.0" yPosition="435.0">
+      <Fields>
+        <Field name="wingSize" type="int" visibility="private"/>
+        <Field name="fly" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="wingSize"/>
+          <Argument type="boolean" name="fly"/>
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="gender"/>
+          <Argument type="float" name="weight"/>
+          <Argument type="Cage" name="cage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getWingSize" returnType="int" visibility="public"/>
+        <Method name="setWingSize" returnType="void" visibility="public">
+          <Argument type="int" name="wingSize"/>
+        </Method>
+        <Method name="isFly" returnType="boolean" visibility="public"/>
+        <Method name="setFly" returnType="void" visibility="public">
+          <Argument type="boolean" name="fly"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Cage" package="ec.edu.espe.polimorfismo.model" visibility="public" xPosition="1369.0" yPosition="239.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="material" type="String" visibility="private"/>
+        <Field name="Xposition" type="int" visibility="private"/>
+        <Field name="Yposition" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="material"/>
+          <Argument type="int" name="Xposition"/>
+          <Argument type="int" name="Yposition"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getMaterial" returnType="String" visibility="public"/>
+        <Method name="setMaterial" returnType="void" visibility="public">
+          <Argument type="String" name="material"/>
+        </Method>
+        <Method name="getXposition" returnType="int" visibility="public"/>
+        <Method name="setXposition" returnType="void" visibility="public">
+          <Argument type="int" name="Xposition"/>
+        </Method>
+        <Method name="getYposition" returnType="int" visibility="public"/>
+        <Method name="setYposition" returnType="void" visibility="public">
+          <Argument type="int" name="Yposition"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Chameleon" package="ec.edu.espe.polimorfismo.model" visibility="public" xPosition="1109.0" yPosition="595.0">
+      <Fields>
+        <Field name="tailLenght" type="int" visibility="private"/>
+        <Field name="camouflage" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="tailLenght"/>
+          <Argument type="boolean" name="camouflage"/>
+          <Argument type="boolean" name="temperatureControl"/>
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="gender"/>
+          <Argument type="float" name="weight"/>
+          <Argument type="Cage" name="cage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getTailLenght" returnType="int" visibility="public"/>
+        <Method name="setTailLenght" returnType="void" visibility="public">
+          <Argument type="int" name="tailLenght"/>
+        </Method>
+        <Method name="isCamouflage" returnType="boolean" visibility="public"/>
+        <Method name="setCamouflage" returnType="void" visibility="public">
+          <Argument type="boolean" name="camouflage"/>
+        </Method>
+        <Method name="getData" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Eel" package="ec.edu.espe.polimorfismo.model" visibility="public" xPosition="1218.0" yPosition="649.0">
+      <Fields>
+        <Field name="electricShock" type="float" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="float" name="electricShock"/>
+          <Argument type="int" name="fins"/>
+          <Argument type="boolean" name="saltwater"/>
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="gender"/>
+          <Argument type="float" name="weight"/>
+          <Argument type="Cage" name="cage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getElectricShock" returnType="float" visibility="public"/>
+        <Method name="setElectricShock" returnType="void" visibility="public">
+          <Argument type="float" name="electricShock"/>
+        </Method>
+        <Method name="getData" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Elephant" package="ec.edu.espe.polimorfismo.model" visibility="public" xPosition="200.0" yPosition="451.0">
+      <Fields>
+        <Field name="trunkLenght" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="trunkLenght"/>
+          <Argument type="boolean" name="isBreastFeeding"/>
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="gender"/>
+          <Argument type="float" name="weight"/>
+          <Argument type="Cage" name="cage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getTrunkLenght" returnType="int" visibility="public"/>
+        <Method name="setTrunkLenght" returnType="void" visibility="public">
+          <Argument type="int" name="trunkLenght"/>
+        </Method>
+        <Method name="getData" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Fish" package="ec.edu.espe.polimorfismo.model" visibility="public" isAbstract="true" xPosition="1251.0" yPosition="537.0">
+      <Fields>
+        <Field name="fins" type="int" visibility="private"/>
+        <Field name="saltwater" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="fins"/>
+          <Argument type="boolean" name="saltwater"/>
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="gender"/>
+          <Argument type="float" name="weight"/>
+          <Argument type="Cage" name="cage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getFins" returnType="int" visibility="public"/>
+        <Method name="setFins" returnType="void" visibility="public">
+          <Argument type="int" name="fins"/>
+        </Method>
+        <Method name="isSaltwater" returnType="boolean" visibility="public"/>
+        <Method name="setSaltwater" returnType="void" visibility="public">
+          <Argument type="boolean" name="saltwater"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="frmAnimal" package="ec.edu.espe.polimorfismo.model" visibility="public" xPosition="-349.0" yPosition="4.0">
+      <Fields>
+        <Field name="cmbAnimal" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="lblInformation" type="javax.swing.JLabel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="cmbAnimalActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Frog" package="ec.edu.espe.polimorfismo.model" visibility="public" xPosition="564.0" yPosition="538.0">
+      <Fields>
+        <Field name="poisonous" type="boolean" visibility="private"/>
+        <Field name="legLenght" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="poisonous"/>
+          <Argument type="int" name="legLenght"/>
+          <Argument type="boolean" name="metamorphosis"/>
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="gender"/>
+          <Argument type="float" name="weight"/>
+          <Argument type="Cage" name="cage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="isPoisonous" returnType="boolean" visibility="public"/>
+        <Method name="setPoisonous" returnType="void" visibility="public">
+          <Argument type="boolean" name="poisonous"/>
+        </Method>
+        <Method name="getLegLenght" returnType="int" visibility="public"/>
+        <Method name="setLegLenght" returnType="void" visibility="public">
+          <Argument type="int" name="legLenght"/>
+        </Method>
+        <Method name="getData" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Loro" package="ec.edu.espe.polimorfismo.model" visibility="public" xPosition="688.0" yPosition="620.0">
+      <Fields>
+        <Field name="talk" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="talk"/>
+          <Argument type="int" name="wingSize"/>
+          <Argument type="boolean" name="fly"/>
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="gender"/>
+          <Argument type="float" name="weight"/>
+          <Argument type="Cage" name="cage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getTalk" returnType="String" visibility="public"/>
+        <Method name="setTalk" returnType="void" visibility="public">
+          <Argument type="String" name="talk"/>
+        </Method>
+        <Method name="getData" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Mammal" package="ec.edu.espe.polimorfismo.model" visibility="public" isAbstract="true" xPosition="-51.0" yPosition="440.0">
+      <Fields>
+        <Field name="isBreastFeeding" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="isBreastFeeding"/>
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="gender"/>
+          <Argument type="float" name="weight"/>
+          <Argument type="Cage" name="cage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="isIsBreastFeeding" returnType="boolean" visibility="public"/>
+        <Method name="setIsBreastFeeding" returnType="void" visibility="public">
+          <Argument type="boolean" name="isBreastFeeding"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Monkey" package="ec.edu.espe.polimorfismo.model" visibility="public" xPosition="-333.0" yPosition="581.0">
+      <Fields>
+        <Field name="tailLength" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="tailLength"/>
+          <Argument type="boolean" name="isBreastFeeding"/>
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="gender"/>
+          <Argument type="float" name="weight"/>
+          <Argument type="Cage" name="cage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getTailLength" returnType="int" visibility="public"/>
+        <Method name="setTailLength" returnType="void" visibility="public">
+          <Argument type="int" name="tailLength"/>
+        </Method>
+        <Method name="getData" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Owl" package="ec.edu.espe.polimorfismo.model" visibility="public" xPosition="348.0" yPosition="584.0">
+      <Fields>
+        <Field name="nightVision" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="nightVision"/>
+          <Argument type="int" name="wingSize"/>
+          <Argument type="boolean" name="fly"/>
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="gender"/>
+          <Argument type="float" name="weight"/>
+          <Argument type="Cage" name="cage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="isNightVision" returnType="boolean" visibility="public"/>
+        <Method name="setNightVision" returnType="void" visibility="public">
+          <Argument type="boolean" name="nightVision"/>
+        </Method>
+        <Method name="getData" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Polimorfismo" package="ec.edu.espe.polimorfismo.model" visibility="public" xPosition="840.0" yPosition="211.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Reptile" package="ec.edu.espe.polimorfismo.model" visibility="public" isAbstract="true" xPosition="1609.0" yPosition="537.0">
+      <Fields>
+        <Field name="temperatureControl" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="temperatureControl"/>
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="gender"/>
+          <Argument type="float" name="weight"/>
+          <Argument type="Cage" name="cage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="isTemperatureControl" returnType="boolean" visibility="public"/>
+        <Method name="setTemperatureControl" returnType="void" visibility="public">
+          <Argument type="boolean" name="temperatureControl"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Shark" package="ec.edu.espe.polimorfismo.model" visibility="public" xPosition="1017.0" yPosition="606.0">
+      <Fields>
+        <Field name="swimmingSpeed" type="float" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="float" name="swimmingSpeed"/>
+          <Argument type="int" name="fins"/>
+          <Argument type="boolean" name="saltwater"/>
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="gender"/>
+          <Argument type="float" name="weight"/>
+          <Argument type="Cage" name="cage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getSwimmingSpeed" returnType="float" visibility="public"/>
+        <Method name="setSwimmingSpeed" returnType="void" visibility="public">
+          <Argument type="float" name="swimmingSpeed"/>
+        </Method>
+        <Method name="getData" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Toad" package="ec.edu.espe.polimorfismo.model" visibility="public" xPosition="444.0" yPosition="607.0">
+      <Fields>
+        <Field name="spotColor" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="spotColor"/>
+          <Argument type="boolean" name="metamorphosis"/>
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="gender"/>
+          <Argument type="float" name="weight"/>
+          <Argument type="Cage" name="cage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getSpotColor" returnType="String" visibility="public"/>
+        <Method name="setSpotColor" returnType="void" visibility="public">
+          <Argument type="String" name="spotColor"/>
+        </Method>
+        <Method name="getData" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Turtle" package="ec.edu.espe.polimorfismo.model" visibility="public" xPosition="1562.0" yPosition="617.0">
+      <Fields>
+        <Field name="water" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="boolean" name="water"/>
+          <Argument type="boolean" name="temperatureControl"/>
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="gender"/>
+          <Argument type="float" name="weight"/>
+          <Argument type="Cage" name="cage"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="isWater" returnType="boolean" visibility="public"/>
+        <Method name="setWater" returnType="void" visibility="public">
+          <Argument type="boolean" name="water"/>
+        </Method>
+        <Method name="getData" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="ec.edu.espe.polimorfismo.model.Toad" target="ec.edu.espe.polimorfismo.model.Amphibian"/>
+    <IsRelation name="is" source="ec.edu.espe.polimorfismo.model.Turtle" target="ec.edu.espe.polimorfismo.model.Reptile"/>
+    <IsRelation name="is" source="ec.edu.espe.polimorfismo.model.Elephant" target="ec.edu.espe.polimorfismo.model.Mammal"/>
+    <IsRelation name="is" source="ec.edu.espe.polimorfismo.model.Owl" target="ec.edu.espe.polimorfismo.model.Bird"/>
+    <IsRelation name="is" source="ec.edu.espe.polimorfismo.model.Amphibian" target="ec.edu.espe.polimorfismo.model.Animal"/>
+    <IsRelation name="is" source="ec.edu.espe.polimorfismo.model.Frog" target="ec.edu.espe.polimorfismo.model.Amphibian"/>
+    <IsRelation name="is" source="ec.edu.espe.polimorfismo.model.Fish" target="ec.edu.espe.polimorfismo.model.Animal"/>
+    <IsRelation name="is" source="ec.edu.espe.polimorfismo.model.Shark" target="ec.edu.espe.polimorfismo.model.Fish"/>
+    <UseRelation source="ec.edu.espe.polimorfismo.model.Animal" target="ec.edu.espe.polimorfismo.model.Cage" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="ec.edu.espe.polimorfismo.model.Reptile" target="ec.edu.espe.polimorfismo.model.Animal"/>
+    <IsRelation name="is" source="ec.edu.espe.polimorfismo.model.Chameleon" target="ec.edu.espe.polimorfismo.model.Reptile"/>
+    <IsRelation name="is" source="ec.edu.espe.polimorfismo.model.Eel" target="ec.edu.espe.polimorfismo.model.Fish"/>
+    <IsRelation name="is" source="ec.edu.espe.polimorfismo.model.Bird" target="ec.edu.espe.polimorfismo.model.Animal"/>
+    <IsRelation name="is" source="ec.edu.espe.polimorfismo.model.Mammal" target="ec.edu.espe.polimorfismo.model.Animal"/>
+    <HasRelation name="cage" source="ec.edu.espe.polimorfismo.model.Animal" target="ec.edu.espe.polimorfismo.model.Cage" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="ec.edu.espe.polimorfismo.model.Loro" target="ec.edu.espe.polimorfismo.model.Bird"/>
+    <IsRelation name="is" source="ec.edu.espe.polimorfismo.model.Monkey" target="ec.edu.espe.polimorfismo.model.Mammal"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -16,6 +16,8 @@ public abstract class Animal {
     // weight in kg
     private float weight;
     private Cage cage;
+    
+    public abstract String getData();
 
     public Animal(int id, String name, String gender, float weight, Cage cage) {
         
@@ -24,6 +26,19 @@ public abstract class Animal {
         this.gender = gender;
         this.weight = weight;
         this.cage = cage;
+    }
+    public void run(){
+        System.out.println("run fast");
+    }
+    public void run(int speed){
+        System.out.println("run at speed "+speed);
+    }
+    public void run(String park){
+        System.out.println("run at park "+park);
+        
+    }
+    public void run(String park,float speed){
+        System.out.println("run at park "+park);
     }
     
     @Override
