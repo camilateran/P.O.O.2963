@@ -50,6 +50,7 @@ public class FrmMenuOption extends javax.swing.JFrame {
         lblName = new javax.swing.JLabel();
         lblExtra = new javax.swing.JLabel();
         lblPrice = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(800, 600));
@@ -96,6 +97,7 @@ public class FrmMenuOption extends javax.swing.JFrame {
         tblMenuInformation.setToolTipText("Tabla de menu");
         jScrollPane1.setViewportView(tblMenuInformation);
 
+        btnBack.setBackground(new java.awt.Color(204, 0, 0));
         btnBack.setFont(new java.awt.Font("Trebuchet MS", 0, 14)); // NOI18N
         btnBack.setText("Regresar");
         btnBack.setToolTipText("Regresar a menu");
@@ -105,7 +107,8 @@ public class FrmMenuOption extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Trebuchet MS", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tw Cen MT Condensed", 3, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 0, 0));
         jLabel1.setText("MENU");
 
         gbtDishTipe.add(rbtFirstDish);
@@ -162,20 +165,25 @@ public class FrmMenuOption extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(rbtFirstDish)
-                        .addGap(18, 18, 18)
-                        .addComponent(rbtMainCourse)
-                        .addGap(18, 18, 18)
-                        .addComponent(rbtDessert)
-                        .addGap(29, 29, 29)
-                        .addComponent(rbtDrink)
-                        .addGap(18, 18, 18)
-                        .addComponent(rbtExtra))
-                    .addComponent(jLabel1)
-                    .addComponent(jScrollPane1))
+                        .addGap(37, 37, 37)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(rbtFirstDish)
+                                .addGap(18, 18, 18)
+                                .addComponent(rbtMainCourse)
+                                .addGap(18, 18, 18)
+                                .addComponent(rbtDessert)
+                                .addGap(29, 29, 29)
+                                .addComponent(rbtDrink)
+                                .addGap(18, 18, 18)
+                                .addComponent(rbtExtra))
+                            .addComponent(jScrollPane1)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 513, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(29, 29, 29)
@@ -192,11 +200,13 @@ public class FrmMenuOption extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(35, 35, 35)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(35, 35, 35)
                         .addComponent(jLabel1)
-                        .addGap(34, 34, 34)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(rbtFirstDish)
                             .addComponent(rbtMainCourse)
@@ -206,13 +216,12 @@ public class FrmMenuOption extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(205, 205, 205)
                         .addComponent(lblName)
                         .addGap(18, 18, 18)
                         .addComponent(lblPrice)
                         .addGap(13, 13, 13)
                         .addComponent(lblExtra)))
-                .addContainerGap(77, Short.MAX_VALUE))
+                .addContainerGap(80, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(btnBack, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -331,6 +340,7 @@ new FrmMenuOption().setVisible(true);            }
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JLabel lblExtra;
     private javax.swing.JLabel lblName;
     private javax.swing.JLabel lblPrice;

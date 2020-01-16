@@ -54,9 +54,9 @@ public class FrmLogin extends javax.swing.JFrame {
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel4.setFont(new java.awt.Font("Trebuchet MS", 1, 24)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Tw Cen MT Condensed", 1, 36)); // NOI18N
         jLabel4.setText("Inicio de Sesión");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, 180, 64));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 280, 240, 64));
 
         jLabel5.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
         jLabel5.setText("Usuario:");
@@ -70,6 +70,7 @@ public class FrmLogin extends javax.swing.JFrame {
         txtPassword.setToolTipText("Ingrese contraseña");
         jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 430, 160, 30));
 
+        btnLogin.setBackground(new java.awt.Color(204, 0, 0));
         btnLogin.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
         btnLogin.setText("Ingresar");
         btnLogin.setToolTipText("Ingresar a menu");
@@ -78,7 +79,7 @@ public class FrmLogin extends javax.swing.JFrame {
                 btnLoginActionPerformed(evt);
             }
         });
-        jPanel1.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 500, 109, 47));
+        jPanel1.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 500, 109, 47));
 
         txtUserName.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
         txtUserName.setToolTipText("Ingrese usuario");
@@ -103,7 +104,7 @@ public class FrmLogin extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Trebuchet MS", 1, 36)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(204, 0, 0));
         jLabel7.setText("Lo Nuestro R&E System");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 421, 90));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 10, 421, 90));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

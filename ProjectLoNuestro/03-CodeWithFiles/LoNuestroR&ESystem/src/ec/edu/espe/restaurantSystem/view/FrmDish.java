@@ -66,7 +66,8 @@ public class FrmDish extends javax.swing.JFrame {
         setMaximumSize(new java.awt.Dimension(800, 600));
         setMinimumSize(new java.awt.Dimension(800, 600));
 
-        jLabel1.setFont(new java.awt.Font("Trebuchet MS", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Tw Cen MT Condensed", 3, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 0, 0));
         jLabel1.setText("Ingreso de Nuevo Plato");
 
         jLabel2.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
@@ -85,7 +86,7 @@ public class FrmDish extends javax.swing.JFrame {
 
         spiPrice.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
         spiPrice.setModel(new javax.swing.SpinnerNumberModel(1.0f, null, null, 0.05f));
-        spiPrice.setToolTipText("Cantidad");
+        spiPrice.setToolTipText("Precio del plato");
 
         jLabel4.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
         jLabel4.setText("Tipo:");
@@ -126,9 +127,10 @@ public class FrmDish extends javax.swing.JFrame {
             }
         });
 
+        btnAddDish.setBackground(new java.awt.Color(255, 153, 0));
         btnAddDish.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
         btnAddDish.setText("Añadir");
-        btnAddDish.setToolTipText("Añadir plato");
+        btnAddDish.setToolTipText("Añadir plato al menu");
         btnAddDish.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddDishActionPerformed(evt);
@@ -151,6 +153,7 @@ public class FrmDish extends javax.swing.JFrame {
         cmbQuantity.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "350 ml", "500 ml", "750 ml", "1 L", "1.5 L", "2 L", "3 L" }));
         cmbQuantity.setToolTipText("Cantidad de bebida");
 
+        btnExit.setBackground(new java.awt.Color(204, 0, 51));
         btnExit.setFont(new java.awt.Font("Trebuchet MS", 0, 18)); // NOI18N
         btnExit.setText("Regresar");
         btnExit.setToolTipText("Regresar a menu");
@@ -166,9 +169,6 @@ public class FrmDish extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(193, 193, 193)
-                        .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(117, 117, 117)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -199,7 +199,10 @@ public class FrmDish extends javax.swing.JFrame {
                                 .addComponent(cmbQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(92, 92, 92)
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 555, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 555, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(193, 193, 193)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 326, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(153, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -233,7 +236,7 @@ public class FrmDish extends javax.swing.JFrame {
                             .addComponent(cmbQuantity, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(rbtExtra)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnAddDish, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
