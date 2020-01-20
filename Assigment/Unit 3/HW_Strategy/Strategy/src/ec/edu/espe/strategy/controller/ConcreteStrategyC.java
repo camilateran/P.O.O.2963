@@ -3,12 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package singleton.controller;
+package ec.edu.espe.strategy.controller;
 
 /**
  *
  * @author camyt
  */
-public class SingletonData {
-    
+public class ConcreteStrategyC implements Strategy{
+    @Override
+    public void AlgorithmInterface(){
+        System.out.println("Strategy C");
+    }
 }

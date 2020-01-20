@@ -1,5 +1,5 @@
 
-package singleton.controller;
+package ec.edu.espe.singleton.controller;
 
 
 public class Singleton {

@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package singleton.view;
+package ec.edu.espe.singleton.view;
 
-import singleton.controller.Singleton;
+import ec.edu.espe.singleton.controller.Singleton;
 
 /**
  *
