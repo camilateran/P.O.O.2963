@@ -3,7 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/camyt/Desktop/P.O.O.2963/Assigment/Unit%203/HW_Composite/src/ec/edu/espe/composite/controller/view/Client.java</file>
+            <file>file:/C:/Users/camyt/Desktop/P.O.O.2963/Assigment/Unit%203/HW_Composite/src/ec/edu/espe/composite/controller/Employee.java</file>
+            <file>file:/C:/Users/camyt/Desktop/P.O.O.2963/Assigment/Unit%203/HW_Composite/src/ec/edu/espe/composite/controller/Supervisor.java</file>
+            <file>file:/C:/Users/camyt/Desktop/P.O.O.2963/Assigment/Unit%203/HW_Composite/src/ec/edu/espe/composite/controller/Manager.java</file>
+            <file>file:/C:/Users/camyt/Desktop/P.O.O.2963/Assigment/Unit%203/HW_Composite/src/ec/edu/espe/composite/controller/Clerk.java</file>
+            <file>file:/C:/Users/camyt/Desktop/P.O.O.2963/Assigment/Unit%203/HW_Composite/src/ec/edu/espe/composite/controller/Client.java</file>
+            <file>file:/C:/Users/camyt/Desktop/P.O.O.2963/Assigment/Unit%203/HW_Composite/src/ec/edu/espe/composite/controller/Teller.java</file>
+            <file>file:/C:/Users/camyt/Desktop/P.O.O.2963/Assigment/Unit%203/HW_Composite/src/ec/edu/espe/composite/controller/view/Setup.java</file>
+            <file>file:/C:/Users/camyt/Desktop/P.O.O.2963/Assigment/Unit%203/HW_Composite/src/ec/edu/espe/composite/controller/President.java</file>
         </group>
     </open-files>
 </project-private>

@@ -13,6 +13,8 @@ import ec.edu.espe.singleton.controller.Singleton;
  */
 public class SingletonClient {
      public static void main(String[] args){
+         
+         
          Singleton camila = Singleton.getSingletonData("camila");
          Singleton emilio = Singleton.getSingletonData("emilio");
          System.out.println(camila.getName());
